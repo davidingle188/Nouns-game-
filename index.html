@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>German Article Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-page">
+      <h1>Welcome to German Learning Games</h1>
+      <button id="start-noun-quiz-btn">Start Noun Quiz</button>
+      <button id="start-preposition-game-btn">
+        German Preposition Game 🇩🇪
+      </button>
+    </div>
+    <div id="quiz-container">
+      <button id="back-btn" style="display: none">&larr; Back</button>
+
+      <h1>Guess the Article</h1>
+      <div id="noun-container">
+        <span id="noun-display">das Haus</span>
+        <span id="meaning-display" class="meaning"></span>
+
+        <button
+          id="speak-btn"
+          aria-label="Listen to noun"
+          title="Listen to noun"
+        >
+          🔊
+        </button>
+      </div>
+      <div
+        id="translation-display"
+        style="margin-bottom: 5px; font-style: italic; color: #555"
+      ></div>
+
+      <input type="text" id="user-input" placeholder="Enter der/die/das" />
+      <button id="submit-btn">Submit</button>
+      <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
